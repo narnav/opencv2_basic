@@ -1,7 +1,7 @@
 import cv2
-image = cv2.imread('bibi.jpg')
+image = cv2.imread('smile.jpg')
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-face_cascade = cv2.CascadeClassifier('haarcascade_fron_face.xml')
+face_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
 try:
     if face_cascade.empty():
         raise IOError('Error: Failed to load cascade classifier')
